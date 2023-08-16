@@ -103,7 +103,7 @@ def hangman_with_hints(secret_word):
         print('You have', guesses_left, 'guesses left.')
         print('Letters you have not guessed:', get_available_letters(letters_guessed))
         print('Enter ? for hint')
-        current_guess = input('Please guess a letter:').lower()
+        current_guess = input('Please guess a letter: ').lower()
 
         # User inputs '*' for hangman with hints.
         if current_guess == '?':
