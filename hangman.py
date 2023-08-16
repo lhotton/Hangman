@@ -16,7 +16,6 @@ def load_words():
 def choose_word(wordlist):
     return random.choice(wordlist)
 
-
 wordlist = load_words()
 
 # Determines if word is guessed.
@@ -82,8 +81,6 @@ def show_possible_matches(my_word):
     if len(matches) == 0:
         print('No matches found.')
     return ' '.join(matches)
-
-
 
 def hangman_with_hints(secret_word):
     
